@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import FloatingHearts from '../components/FloatingHearts'
 import ContinueButton from '../components/ContinueButton'
-import { MOTHER_NAME, WISHER_NAME, HOME_MESSAGES } from '../utils/constants'
+import { WISHER_NAME, HOME_MESSAGES } from '../utils/constants'
 import { smoothEase } from '../utils/motion'
 
 export default function HomePage({ onNext }) {
@@ -52,7 +52,7 @@ export default function HomePage({ onNext }) {
           <h1 className="font-[family-name:var(--font-display)] text-4xl font-semibold leading-tight text-white glow-text sm:text-5xl md:text-7xl">
             <span className="block">Happy Birthday</span>
             <span className="mt-2 block bg-gradient-to-r from-rose-200 via-pink-300 to-amber-200/90 bg-clip-text text-transparent">
-              Mummy {MOTHER_NAME}
+              Amma
             </span>
           </h1>
 

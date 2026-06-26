@@ -50,7 +50,7 @@ export const TIMELINE_MEMORIES = [
 ]
 
 export const LETTER_CONTENT = {
-  greeting: 'My dearest Mummy Kranthi,',
+  greeting: 'My dearest Amma,',
   paragraphs: [
     'I want to start by saying thank you — for every sacrifice you never spoke about, for every tear you wiped away before I even noticed, for choosing me again and again with a love so pure it still takes my breath away.',
     'You are the reason I believe in goodness. The way you care for our family, the way you worry about everyone before yourself, the way your eyes light up when you see me — it tells me everything about the beautiful heart you have.',
