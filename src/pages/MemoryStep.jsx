@@ -1,18 +1,19 @@
 import { motion } from 'framer-motion'
 import FloatingHearts from '../components/FloatingHearts'
 import ContinueButton from '../components/ContinueButton'
+import { smoothEase } from '../utils/motion'
 
 export default function MemoryStep({ memory, index, total, onNext }) {
   const isLast = index === total - 1
 
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center px-6 pb-28 pt-20">
-      <FloatingHearts count={6} />
+      <FloatingHearts count={5} />
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.9, ease: smoothEase }}
         className="mb-8 text-center"
       >
         <p className="text-xs font-medium uppercase tracking-[0.35em] text-rose-300/70">
@@ -31,20 +32,17 @@ export default function MemoryStep({ memory, index, total, onNext }) {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, scale: 0.94, y: 24 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.15, duration: 1, ease: smoothEase }}
         className="w-full max-w-lg"
       >
         <div className="glass-card overflow-hidden rounded-2xl glow-border">
           <div className="relative overflow-hidden">
-            <motion.img
+            <img
               src={memory.image}
               alt={memory.alt}
               className="h-56 w-full object-cover sm:h-72"
-              initial={{ scale: 1.12 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-rose-900/10" />
           </div>
@@ -59,9 +57,9 @@ export default function MemoryStep({ memory, index, total, onNext }) {
               {memory.caption}
             </p>
             <motion.p
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 1, ease: smoothEase }}
               className="love-line mt-5 text-lg sm:text-xl"
             >
               {memory.loveLine}
@@ -75,7 +73,7 @@ export default function MemoryStep({ memory, index, total, onNext }) {
           onClick={onNext}
           label={isLast ? 'Read My Letter to You' : 'Next Cherished Memory'}
           sublabel={isLast ? 'from my heart' : 'keep going'}
-          delay={1.2}
+          delay={0.9}
         />
       </div>
     </div>

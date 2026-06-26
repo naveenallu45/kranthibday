@@ -1,4 +1,4 @@
-export const SECRET_CODES = ['KRANTHI629', 'MOMLOVE', '6292026']
+export const SECRET_CODES = ['1984', 'MOMLOVE', '6292026']
 
 export const MOTHER_NAME = 'Kranthi'
 export const WISHER_NAME = 'Sarayu'
