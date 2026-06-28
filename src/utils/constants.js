@@ -17,8 +17,9 @@ export const TIMELINE_MEMORIES = [
     caption:
       'Before I knew the meaning of love, I already felt it — in your arms, in your lullabies, in the way you looked at me like I was the whole world.',
     loveLine: 'You were my very first home.',
-    image: 'https://placehold.co/600x400/2d1b4e/f472b6?text=Childhood+Love',
+    image: 'https://res.cloudinary.com/dnpjmhswb/image/upload/v1782619286/IMG-20260627-WA0005_eqaf58.jpg',
     alt: 'Memory image - replace later',
+    imageCrop: { top: 5, bottom: 5 },
   },
   {
     id: 'family',
@@ -26,8 +27,9 @@ export const TIMELINE_MEMORIES = [
     caption:
       'The kitchen smells, Sunday mornings, your voice calling my name — every small moment became a memory I carry like a treasure close to my heart.',
     loveLine: 'You turned ordinary days into magic.',
-    image: 'https://placehold.co/600x400/4c1d95/d4a574?text=Family+Moments',
+    image: 'https://res.cloudinary.com/dnpjmhswb/image/upload/v1782619287/IMG-20260627-WA0008_pzgtyl.jpg',
     alt: 'Memory image - replace later',
+    imageCrop: { top: 14, bottom: 14 },
   },
   {
     id: 'strength',
@@ -35,7 +37,7 @@ export const TIMELINE_MEMORIES = [
     caption:
       'You never complained. You simply loved harder, gave more, and stood taller — teaching me that real strength wears a gentle smile.',
     loveLine: 'Your courage lives inside me.',
-    image: 'https://placehold.co/600x400/831843/f8f4ff?text=Strength+and+Care',
+    image: 'https://res.cloudinary.com/dnpjmhswb/image/upload/v1782619287/IMG-20260627-WA0006_hep13g.jpg',
     alt: 'Memory image - replace later',
   },
   {
@@ -44,7 +46,7 @@ export const TIMELINE_MEMORIES = [
     caption:
       'Years will pass, seasons will change — but my love for you will only grow deeper, softer, and more beautiful with every breath I take.',
     loveLine: 'I love you today, tomorrow, always.',
-    image: 'https://placehold.co/600x400/1a0a2e/f472b6?text=Forever+Love',
+    image: 'https://res.cloudinary.com/dnpjmhswb/image/upload/v1782619288/IMG-20260627-WA0007_gdlgb8.jpg',
     alt: 'Memory image - replace later',
   },
 ]
